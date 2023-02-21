@@ -2,13 +2,11 @@
 #include <time.h>
 #include <stdio.h>
 /**
- *main - Determine if the last digit of a random number is
- *greater than or kess than 5, or is zero
+ * main - Determine if the last digit of a random number is
+ * greater than or less than 5, or is zero..
 (*
- * Return: 0on a success
+ * Return: 0 on success
  */
-
-/* betty style doc for function main goes there */
 int main(void)
 {
 	int n;
@@ -29,6 +27,6 @@ int main(void)
 	{
 		printf("less than 6 and not 0\n");
 	}
+	return (0);
 
-        return (0);
 }
