@@ -6,17 +6,14 @@
  *@head: pointer to the linked list's head
  *Return: the value of the head node's data
  */
-int pop_listint(listint_t **head)
-{
-	listint_t *tmp = *head;
-	int x;
+int pop_listint(listint_t **head) {
+    if (*head == NULL) {
+        return 0;  // return 0 if the linked list is empty
+    }
 
-	if (*head != NULL)
-	{
-		x = tmp->n;
-		free(*head);
-		*head = tmp->next;
-		return (x);
-	}
-	return (0);
+    int data = (*head)->n;  // store the data of the head node
+    listint_t *temp = *head;  // store a pointer to the head node
+    *head = (*head)->next;  // update the head pointer to the next node
+    free(temp);  // free the memory occupied by the old head node
+    return data;  // return the data of the old head node
 }
