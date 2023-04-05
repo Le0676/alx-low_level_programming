@@ -1,0 +1,3 @@
+In C, a singly linked list is a data structure used for storing a collection of elements. It consists of a sequence of nodes, each containing a data field and a pointer to the next node in the sequence. The last node in the list points to a null value, indicating the end of the list.
+
+To use this implementation, you would create a pointer to the head of the list and call the insert() function to add elements to the list. You can then traverse the list by following the next pointers of each node, starting from the head.
